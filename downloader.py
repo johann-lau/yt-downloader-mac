@@ -1,5 +1,9 @@
+print("YT Downloader 0.0.1")
+
+import logging
 import os
 import subprocess
+import sys
 import threading
 import tkinter as tk
 import tkinter.messagebox as messagebox
@@ -12,7 +16,24 @@ from PIL import Image, ImageShow, ImageTk
 # https://www.youtube.com/watch?v=F7mKD2Un65I
 # https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
+# Exception handing
+logging.basicConfig(filename='log.log', level=logging.DEBUG, 
+                    format='%(asctime)s %(levelname)s %(name)s %(message)s')
+logger = logging.getLogger(__name__)
+# handler = logging.StreamHandler(stream=sys.stdout)
+# logger.addHandler(handler)
 
+def handle_exception(exc_type, exc_value, exc_traceback):
+    if issubclass(exc_type, KeyboardInterrupt):
+        sys.__excepthook__(exc_type, exc_value, exc_traceback)
+        return
+
+    logger.error("Uncaught exception", exc_info=(exc_type, exc_value, exc_traceback))
+
+sys.excepthook = handle_exception
+
+
+# App
 TITLE_FONT = ("Verdana", 20, "bold")
 DESC_FONT = ("Helvetica", 15, "")
 
@@ -241,10 +262,10 @@ class App(tk.Tk):
 
 
     def handle_go_button(self, event=None) -> None:
-        self.go_button.configure(state="disabled")
         try:
             self.yt = pt.YouTube(self.url_entry.get())
         except pt.exceptions.RegexMatchError:
+            self.go_button.configure(state="normal")
             messagebox.showerror("Invalid URL", "Please check that the URL is correct")
             return
 
@@ -272,8 +293,6 @@ class App(tk.Tk):
         self.desc_lb.configure(text=self.yt.description if self.yt.description else "No description")
 
         self.resize()
-
-        self.go_button.configure(state="normal")
 
 
     def handle_auto_download_button(self, event=None) -> None:

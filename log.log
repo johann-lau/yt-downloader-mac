@@ -1,0 +1,26 @@
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin STREAM b'IHDR' 16 13
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin STREAM b'gAMA' 41 4
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin STREAM b'cHRM' 57 32
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin STREAM b'bKGD' 101 2
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin b'bKGD' 101 2 (unknown)
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin STREAM b'tIME' 115 7
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin b'tIME' 115 7 (unknown)
+2023-09-19 17:38:16,837 DEBUG PIL.PngImagePlugin STREAM b'IDAT' 134 1528
+2023-09-19 17:38:16,838 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1674 37
+2023-09-19 17:38:16,838 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1723 37
+2023-09-19 17:38:20,343 DEBUG pytube.helpers matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-09-19 17:38:20,368 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): img.youtube.com:443
+2023-09-19 17:38:20,437 DEBUG urllib3.connectionpool https://img.youtube.com:443 "GET /vi/yt-download/maxresdefault.jpg HTTP/1.1" 404 1097
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin STREAM b'IHDR' 16 13
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin STREAM b'gAMA' 41 4
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin STREAM b'cHRM' 57 32
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin STREAM b'bKGD' 101 2
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin b'bKGD' 101 2 (unknown)
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin STREAM b'tIME' 115 7
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin b'tIME' 115 7 (unknown)
+2023-09-19 17:38:53,138 DEBUG PIL.PngImagePlugin STREAM b'IDAT' 134 1528
+2023-09-19 17:38:53,139 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1674 37
+2023-09-19 17:38:53,139 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1723 37
+2023-09-19 17:38:55,456 DEBUG pytube.helpers matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-09-19 17:38:55,472 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): img.youtube.com:443
+2023-09-19 17:38:55,551 DEBUG urllib3.connectionpool https://img.youtube.com:443 "GET /vi/yt-download/maxresdefault.jpg HTTP/1.1" 404 1097
