@@ -2,8 +2,8 @@
 YT-Downloader is a GUI program for Mac to download YouTube videos.
 
 ## Version
-Version: 0.0.1
-Updated: 19 September 2023, 10:00 UTC
+Version: 0.0.2
+Updated: 19 September 2023, 12:00 UTC
 
 ## Installation
 1. Obtain the latest copy of the project: **If you are viewing this on GitHub**, Press the green Code button and select "Download ZIP", then unzip the downloaded file. **If you are viewing this from your local storage**, you likely already have the project downloaded; you can still get an updated version by following the steps above.
@@ -41,7 +41,7 @@ To run the program, just go into the `yt-downloader-mac` folder, and double clic
 ## Troubleshooting
 
 #### chmod: No such file or directory
-Please make sure that `downloader.command` is in the folder. Also, make sure that you used "New Terminal at Folder" on the correct folder.
+Please make sure that `downloader.command` is in the folder, and that you used "New Terminal at Folder" on the correct folder. Check for typpos within the file name as well.
 
 #### Missing video description
 Unfortunately, this may happen to some videos due to an issue with the library `pytube`. There is nothing we can do about this, but be assured as the video title should always be correct.
@@ -55,7 +55,11 @@ These are some generic items that you should check:
 - Stable Internet connection
 
 #### I found a bug that is not listed above! / I want to request a new issue!
-Visit the [https://github.com/johann-lau/yt-downloader-mac/issues](issue page) and create a new issue. Please use the default templates provided if possible, and include the `log.log` file if needed. We will process your request as soon as possible.
+Visit the [issue page](https://github.com/johann-lau/yt-downloader-mac/issues) and create a new issue. Please use the default templates provided if possible, and include the `log.log` file if needed. We will process your request as soon as possible.
+
+
+## Developer
+Would you like to contribute? Know someone proficient in Python or Shell scripting? Drop me a message or E-mail me at johannlau8888@gmail.com
 
 
 ## License
