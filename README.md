@@ -10,7 +10,7 @@ Updated: 19 September 2023, 10:00 UTC
 
 2. Set the permission: Due to the nature of permissions, you need to enable the execution permission for the program before running. Right click on the `yt-downloader-mac` folder and select **New Terminal at Folder**.
 
-![Screenshot of how the terminal folder can be opened](/screenshots/terminal.png)
+![Screenshot of how the terminal folder can be opened](/screenshots/permission.png)
 
 ![Screenshot of what the terminal looks like](/screenshots/chmod1.png)
 
@@ -34,7 +34,8 @@ To run the program, just go into the `yt-downloader-mac` folder, and double clic
 
 > [!NOTE]
 > Due to how files are stored, you may see that audio files have the `.mp4` extension instead of the `.mp3` extension. This is normal behaviour and the file will still not contain the video part. Mainstream media players will correctly classify those as audio files, but you can still manually rename the extension to `.mp3` if needed.
-> Please do not put files named `max_video` or `max_audio` inside the folder. These filenames are reserved for the program and will be deleted.
+
+> Besides, Please do not put files named `max_video` or `max_audio` inside the folder. These filenames are reserved for the program and will be deleted.
 
 
 ## Troubleshooting
