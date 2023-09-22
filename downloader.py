@@ -1,18 +1,18 @@
-print("YT Downloader 0.0.1")
-
 import logging
 import os
 import subprocess
 import sys
 import threading
 import tkinter as tk
-import tkinter.messagebox as messagebox
-import tkinter.ttk as ttk
+from tkinter import messagebox
+from tkinter import ttk
 
 import pytube as pt
 import requests
 from PIL import Image, ImageShow, ImageTk
 
+print("YT Downloader 0.0.3")
+# https://www.youtube.com/watch?v=fyQ5EmzbnM4
 # https://www.youtube.com/watch?v=F7mKD2Un65I
 # https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
@@ -156,13 +156,13 @@ class App(tk.Tk):
         self.video_frame = tk.Frame(self)
         self.thumbnail_lb = ttk.Label(self.video_frame)
         self.title_lb = tk.Label(self.video_frame, text="Video Title", font=TITLE_FONT)
-        self.desc_lb = tk.Label(self.video_frame, text="Video Description", font=DESC_FONT)
+        self.desc_tb = tk.Label(self.video_frame, text="Video Description", font=DESC_FONT)
         self.set_image("placeholder.png")
 
         self.video_frame.grid(row=1, column=0, pady=0)
         self.thumbnail_lb.grid(row=0, column=0, rowspan=2, padx=self.THUMBNAIL_PADX)
         self.title_lb.grid(row=0, column=1, padx=self.TEXT_PADX)
-        self.desc_lb.grid(row=1, column=1, padx=self.TEXT_PADX)
+        self.desc_tb.grid(row=1, column=1, padx=self.TEXT_PADX)
 
         self.video_frame.grid_columnconfigure(1, weight=1)
         self.video_frame.grid_rowconfigure(0, weight=1)
@@ -223,7 +223,7 @@ class App(tk.Tk):
                 self.previous_width, self.previous_height = event.width, event.height
                 available_width_for_text = event.width - self.THUMBNAIL_SIZE_X - 2 * (self.THUMBNAIL_PADX + self.TEXT_PADX)
                 self.title_lb.configure(wraplength=available_width_for_text)
-                self.desc_lb.configure(wraplength=available_width_for_text)
+                self.desc_tb.configure(wraplength=available_width_for_text)
 
 
     def open_current_image(self, event=None):
@@ -290,7 +290,7 @@ class App(tk.Tk):
 
         # Title & Description
         self.title_lb.configure(text=self.yt.title)
-        self.desc_lb.configure(text=self.yt.description if self.yt.description else "No description")
+        self.desc_tb.configure(text=self.yt.description if self.yt.description else "No description")
 
         self.resize()
 
@@ -401,7 +401,7 @@ class App(tk.Tk):
         label.after(100, lambda: self.update_progress_bar(filename=filename, max_size=max_size, label=label))
 
 
-
+print(__name__ == "__main__")
 if __name__ == "__main__":
     app = App()
     app.mainloop()

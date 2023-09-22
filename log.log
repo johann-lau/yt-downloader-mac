@@ -24,3 +24,183 @@
 2023-09-19 17:38:55,456 DEBUG pytube.helpers matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
 2023-09-19 17:38:55,472 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): img.youtube.com:443
 2023-09-19 17:38:55,551 DEBUG urllib3.connectionpool https://img.youtube.com:443 "GET /vi/yt-download/maxresdefault.jpg HTTP/1.1" 404 1097
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin STREAM b'IHDR' 16 13
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin STREAM b'gAMA' 41 4
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin STREAM b'cHRM' 57 32
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin STREAM b'bKGD' 101 2
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin b'bKGD' 101 2 (unknown)
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin STREAM b'tIME' 115 7
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin b'tIME' 115 7 (unknown)
+2023-09-22 14:14:59,325 DEBUG PIL.PngImagePlugin STREAM b'IDAT' 134 1528
+2023-09-22 14:14:59,327 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1674 37
+2023-09-22 14:14:59,327 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1723 37
+2023-09-22 14:15:02,351 DEBUG pytube.helpers matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-09-22 14:15:02,373 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): img.youtube.com:443
+2023-09-22 14:15:02,478 DEBUG urllib3.connectionpool https://img.youtube.com:443 "GET /vi/fyQ5EmzbnM4/maxresdefault.jpg HTTP/1.1" 200 281048
+2023-09-22 14:15:03,974 DEBUG pytube.extract applying descrambler
+2023-09-22 14:15:03,976 DEBUG pytube.extract finding initial function name
+2023-09-22 14:15:03,977 DEBUG pytube.extract Pattern failed: ytplayer\.config\s*=\s*
+2023-09-22 14:15:03,977 DEBUG pytube.extract Could not parse object.
+2023-09-22 14:15:04,022 DEBUG pytube.extract finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2023-09-22 14:15:04,914 DEBUG pytube.cipher finding initial function name
+2023-09-22 14:15:05,229 DEBUG pytube.cipher finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2023-09-22 14:15:05,229 DEBUG pytube.cipher getting transform plan
+2023-09-22 14:15:05,229 DEBUG pytube.helpers matched regex search: HKa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2023-09-22 14:15:05,229 DEBUG pytube.cipher getting transform object
+2023-09-22 14:15:05,231 DEBUG pytube.cipher Finding throttling function name
+2023-09-22 14:15:05,232 DEBUG pytube.cipher finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-09-22 14:15:05,236 DEBUG pytube.cipher Finding throttling function name
+2023-09-22 14:15:05,236 DEBUG pytube.cipher finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:15:05,242 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:16:41,334 ERROR __main__ Uncaught exception
+Traceback (most recent call last):
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 406, in <module>
+    app = App()
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 159, in __init__
+    self.desc_tb = tk.Text(self.video_frame, text="Video Description", font=DESC_FONT)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 3559, in __init__
+    Widget.__init__(self, master, 'text', cnf, kw)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 2572, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-text"
+2023-09-22 14:16:54,478 ERROR __main__ Uncaught exception
+Traceback (most recent call last):
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 406, in <module>
+    app = App()
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 159, in __init__
+    self.desc_tb = tk.Text(self.video_frame, text="Video Description", font=DESC_FONT)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 3559, in __init__
+    Widget.__init__(self, master, 'text', cnf, kw)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 2572, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-text"
+2023-09-22 14:17:18,454 ERROR __main__ Uncaught exception
+Traceback (most recent call last):
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 406, in <module>
+    app = App()
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 159, in __init__
+    self.desc_tb = tk.Text(self.video_frame, text="Video Description", font=DESC_FONT)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 3559, in __init__
+    Widget.__init__(self, master, 'text', cnf, kw)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 2572, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-text"
+2023-09-22 14:18:31,666 ERROR __main__ Uncaught exception
+Traceback (most recent call last):
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 406, in <module>
+    app = App()
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 159, in __init__
+    self.desc_tb = tk.Text(self.video_frame, text="Video Description", font=DESC_FONT)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 3559, in __init__
+    Widget.__init__(self, master, 'text', cnf, kw)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 2572, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-text"
+2023-09-22 14:18:41,708 ERROR __main__ Uncaught exception
+Traceback (most recent call last):
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 406, in <module>
+    app = App()
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 159, in __init__
+    self.desc_tb = tk.Text(self.video_frame, text="Video Description", font=DESC_FONT)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 3559, in __init__
+    Widget.__init__(self, master, 'text', cnf, kw)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 2572, in __init__
+    self.tk.call(
+_tkinter.TclError: unknown option "-text"
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin STREAM b'IHDR' 16 13
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin STREAM b'gAMA' 41 4
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin STREAM b'cHRM' 57 32
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin STREAM b'bKGD' 101 2
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin b'bKGD' 101 2 (unknown)
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin STREAM b'tIME' 115 7
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin b'tIME' 115 7 (unknown)
+2023-09-22 14:18:58,078 DEBUG PIL.PngImagePlugin STREAM b'IDAT' 134 1528
+2023-09-22 14:18:58,080 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1674 37
+2023-09-22 14:18:58,080 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1723 37
+2023-09-22 14:18:58,086 ERROR __main__ Uncaught exception
+Traceback (most recent call last):
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 406, in <module>
+    app = App()
+  File "/Users/johann/Desktop/yt-downloader-mac/downloader.py", line 165, in __init__
+    self.desc_tb.grid(row=1, column=1, padx=self.TEXT_PADX)
+  File "/Users/johann/opt/anaconda3/lib/python3.9/tkinter/__init__.py", line 2354, in __getattr__
+    return getattr(self.tk, attr)
+AttributeError: '_tkinter.tkapp' object has no attribute 'desc_tb'
+2023-09-22 14:20:40,707 DEBUG PIL.PngImagePlugin STREAM b'IHDR' 16 13
+2023-09-22 14:20:40,708 DEBUG PIL.PngImagePlugin STREAM b'gAMA' 41 4
+2023-09-22 14:20:40,708 DEBUG PIL.PngImagePlugin STREAM b'cHRM' 57 32
+2023-09-22 14:20:40,708 DEBUG PIL.PngImagePlugin STREAM b'bKGD' 101 2
+2023-09-22 14:20:40,708 DEBUG PIL.PngImagePlugin b'bKGD' 101 2 (unknown)
+2023-09-22 14:20:40,708 DEBUG PIL.PngImagePlugin STREAM b'tIME' 115 7
+2023-09-22 14:20:40,708 DEBUG PIL.PngImagePlugin b'tIME' 115 7 (unknown)
+2023-09-22 14:20:40,708 DEBUG PIL.PngImagePlugin STREAM b'IDAT' 134 1528
+2023-09-22 14:20:40,709 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1674 37
+2023-09-22 14:20:40,709 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1723 37
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin STREAM b'IHDR' 16 13
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin STREAM b'gAMA' 41 4
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin STREAM b'cHRM' 57 32
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin STREAM b'bKGD' 101 2
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin b'bKGD' 101 2 (unknown)
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin STREAM b'tIME' 115 7
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin b'tIME' 115 7 (unknown)
+2023-09-22 14:21:10,571 DEBUG PIL.PngImagePlugin STREAM b'IDAT' 134 1528
+2023-09-22 14:21:10,572 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1674 37
+2023-09-22 14:21:10,572 DEBUG PIL.PngImagePlugin STREAM b'tEXt' 1723 37
+2023-09-22 14:21:15,159 DEBUG pytube.helpers matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-09-22 14:21:15,190 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): img.youtube.com:443
+2023-09-22 14:21:15,281 DEBUG urllib3.connectionpool https://img.youtube.com:443 "GET /vi/dQw4w9WgXcQ/maxresdefault.jpg HTTP/1.1" 200 73992
+2023-09-22 14:21:16,409 DEBUG pytube.extract applying descrambler
+2023-09-22 14:21:16,411 DEBUG pytube.extract finding initial function name
+2023-09-22 14:21:16,413 DEBUG pytube.extract Pattern failed: ytplayer\.config\s*=\s*
+2023-09-22 14:21:16,413 DEBUG pytube.extract Could not parse object.
+2023-09-22 14:21:16,471 DEBUG pytube.extract finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2023-09-22 14:21:17,454 DEBUG pytube.cipher finding initial function name
+2023-09-22 14:21:17,769 DEBUG pytube.cipher finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2023-09-22 14:21:17,769 DEBUG pytube.cipher getting transform plan
+2023-09-22 14:21:17,769 DEBUG pytube.helpers matched regex search: HKa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2023-09-22 14:21:17,769 DEBUG pytube.cipher getting transform object
+2023-09-22 14:21:17,771 DEBUG pytube.cipher Finding throttling function name
+2023-09-22 14:21:17,772 DEBUG pytube.cipher finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-09-22 14:21:17,777 DEBUG pytube.cipher Finding throttling function name
+2023-09-22 14:21:17,777 DEBUG pytube.cipher finished regex search, matched: a\.[a-zA-Z]\s*&&\s*\([a-z]\s*=\s*a\.get\("n"\)\)\s*&&\s*\([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])?\([a-z]\)
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher
+2023-09-22 14:21:17,783 DEBUG pytube.extract signature found, skip decipher

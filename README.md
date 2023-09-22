@@ -1,12 +1,17 @@
 # YT-Downloader
 YT-Downloader is a GUI program for Mac to download YouTube videos.
 
+![Screenshot of the app](/screenshots/app_screenshot.png)
+
 ## Version
-Version: 0.0.2
-Updated: 19 September 2023, 12:00 UTC
+Version: 0.0.3
+
+Updated: 22 September 2023, 06:00 UTC
 
 ## Installation
 1. Obtain the latest copy of the project: **If you are viewing this on GitHub**, Press the green Code button and select "Download ZIP", then unzip the downloaded file. **If you are viewing this from your local storage**, you likely already have the project downloaded; you can still get an updated version by following the steps above.
+
+![Screenshot of how the ZIP file can be downloaded](/screenshots/download.png)
 
 2. Set the permission: Due to the nature of permissions, you need to enable the execution permission for the program before running. Right click on the `yt-downloader-mac` folder and select **New Terminal at Folder**.
 
